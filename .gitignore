@@ -1,3 +1,5 @@
 .history
 encodings.pickle
 dataset
+.venv
+.vscode

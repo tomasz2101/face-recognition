@@ -63,7 +63,8 @@ def main(*args):
         # if the `k` key was pressed, write the *original* frame to disk
         # so we can later process it and use it for face recognition
         if key == ord("k"):
-            p = os.path.sep.join([argsfoutput, "{}.png".format(
+            print("saving...")
+            p = os.path.sep.join([args.output, "{}.png".format(
                 str(total).zfill(5))])
             cv2.imwrite(p, orig)
             total += 1

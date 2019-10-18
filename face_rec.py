@@ -118,7 +118,7 @@ def main(*args):
     # TW need for classifier ????
     # OpenCV's Haar cascade for face detection only for raspberypi
     if args.detection_method == 'haar':
-        detector = cv2.CascadeClassifier(args.cascade)
+        detector = cv2.CascadeClassifier('/Users/tomwit/git_home/face-recognition/haarcascade_frontalface_default.xml')
     vs, writer, fps = start_video_stream(args.video_input)
 
     # loop over frames from the video file stream
